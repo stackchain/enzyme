@@ -34,6 +34,7 @@ export function childrenOfNode(node) {
 export function hasClassName(node, className) {
   let classes = propsOfNode(node).className || '';
   classes = String(classes).replace(/\s/g, ' ');
+  if (className instanceof RegExp) return className.test(classes);
   return ` ${classes} `.indexOf(` ${className} `) > -1;
 }
 

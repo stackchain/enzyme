@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.8.1
+
+### New Stuff
+ - @stackchain: `hasClass`: now supports RegExp, it makes easier to deal with JSS decorators.
+
+### Docs
+ - `hasClass`: updated with example using the new regex feature.
+
 ## 3.8.0
 
 ### New Stuff
